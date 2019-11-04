@@ -47,7 +47,7 @@ while True:
     # Difference between static background  
     # and current frame(which is GaussianBlur) 
     diff_frame = cv2.absdiff(static_back, gray) 
-  
+    
     # If change in between static background and 
     # current frame is greater than 30 it will show white color(255) 
     thresh_frame = cv2.threshold(diff_frame, 30, 255, cv2.THRESH_BINARY)[1] 
@@ -72,7 +72,8 @@ while True:
     motion_list = motion_list[-2:] 
   
     # Appending Start time of motion 
-    if motion_list[-1] == 1 and motion_list[-2] == 0: 
+    if motion_list[-1] == 1 and motion_list[-2] == 0:
+        print("threshold") 
         time.append(datetime.now()) 
   
     # Appending End time of motion 

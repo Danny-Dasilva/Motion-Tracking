@@ -8,6 +8,10 @@ import cv2, time
 # importing datetime class from datetime library 
 from datetime import datetime 
   
+  
+ 
+
+
 # Assigning our static_back to None 
 static_back = None
   
